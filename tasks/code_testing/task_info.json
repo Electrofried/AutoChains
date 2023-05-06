@@ -1,0 +1,19 @@
+{
+    "name": "Code Testing Task",
+    "requirement_tags": [
+        "python_code"
+    ],
+    "output_tags": [
+        "syntax_check_result"
+    ],
+    "meta_tags": [
+        "code_testing",
+        "syntax_check"
+    ],
+    "input_tags": [
+        "python_code"
+    ],
+    "imports": [
+        "pylint.lint"
+    ]
+}

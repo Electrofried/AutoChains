@@ -1,0 +1,19 @@
+{
+    "name": "File Retrieval Task",
+    "requirement_tags": [
+        "file_path"
+    ],
+    "output_tags": [
+        "file_content"
+    ],
+    "meta_tags": [
+        "file_manipulation",
+        "file_retrieval"
+    ],
+    "input_tags": [
+        "file_path"
+    ],
+    "imports": [
+        "os"
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "File Append Task",
+    "requirement_tags": [
+        "file_path",
+        "content_to_append"
+    ],
+    "output_tags": [
+        "operation_results"
+    ],
+    "meta_tags": [
+        "file_manipulation",
+        "file_append"
+    ],
+    "input_tags": [
+        "file_path",
+        "content_to_append"
+    ],
+    "imports": [
+        "os"
+    ]
+}

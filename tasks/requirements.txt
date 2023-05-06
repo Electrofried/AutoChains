@@ -1,0 +1,5 @@
+os
+provider.generate_text
+pylint.lint
+re
+subprocess

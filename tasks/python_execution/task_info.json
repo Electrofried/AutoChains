@@ -1,0 +1,19 @@
+{
+    "name": "Code Testing Task",
+    "requirement_tags": [
+        "generated_code"
+    ],
+    "output_tags": [
+        "test_results"
+    ],
+    "meta_tags": [
+        "code_testing",
+        "programming"
+    ],
+    "input_tags": [
+        "file_path"
+    ],
+    "imports": [
+        "subprocess"
+    ]
+}

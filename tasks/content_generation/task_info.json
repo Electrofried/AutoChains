@@ -1,0 +1,28 @@
+{
+    "name": "Content Generation Task",
+    "requirement_tags": [
+        "content_type",
+        "main_goal",
+        "sub_goal"
+    ],
+    "optional_tags": [
+        "instruction"
+    ],
+    "output_tags": [
+        "generated_content"
+    ],
+    "meta_tags": [
+        "content_generation",
+        "llm"
+    ],
+    "input_tags": [
+        "content_type",
+        "main_goal",
+        "sub_goal",
+        "instruction"
+    ],
+    "imports": [
+        "provider.generate_text",
+        "os"
+    ]
+}

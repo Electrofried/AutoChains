@@ -1,0 +1,20 @@
+{
+    "name": "Dependency Installation Task",
+    "requirement_tags": [
+        "python_code"
+    ],
+    "output_tags": [
+        "installation_result"
+    ],
+    "meta_tags": [
+        "dependency_management",
+        "pip_install"
+    ],
+    "input_tags": [
+        "python_code"
+    ],
+    "imports": [
+        "subprocess",
+        "re"
+    ]
+}

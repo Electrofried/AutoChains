@@ -1,0 +1,24 @@
+{
+    "name": "Code Generation Task",
+    "requirement_tags": [
+        "programming_language",
+        "code_goal"
+    ],
+    "output_tags": [
+        "generated_code",
+        "string"
+    ],
+    "meta_tags": [
+        "code_generation",
+        "programming"
+    ],
+    "input_tags": [
+        "main_goal",
+        "sub_goal",
+        "specific_info"
+    ],
+    "imports": [
+        "provider.generate_text",
+        "os"
+    ]
+}

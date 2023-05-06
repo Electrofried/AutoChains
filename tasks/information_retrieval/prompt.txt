@@ -1,0 +1,6 @@
+###Human:
+You are an AI created to assist with {main_goal}, that retrieves relevant information about the following topic: {sub_goal}.
+{specific_info_section}
+
+Please provide a concise summary of the information you found.
+###Assistant:

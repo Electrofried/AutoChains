@@ -1,0 +1,23 @@
+{
+    "name": "Objective List Task",
+    "requirement_tags": [
+        "objective",
+        "user_prompt"
+    ],
+    "output tags": [
+        "objective",
+        "list"
+    ],
+    "meta_tags": [
+        "list_generation",
+        "objective"
+    ],
+    "input_tags": [
+        "input_data",
+        "num_sub_tasks"
+    ],
+    "imports": [
+        "provider.generate_text",
+        "os"
+    ]
+}

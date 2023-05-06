@@ -1,0 +1,50 @@
+{
+  "task_types": [
+    "code_generation",
+    "content_generation",
+    "file_creation",
+    "file_deletion",
+    "file_append",
+    "file_retrieval",
+    "file_list",
+    "code_testing",
+    "syntax_check",
+    "code_refinement",
+    "dependency_management",
+    "pip_install",
+    "information_retrieval",
+    "list_generation",
+    "objective"
+  ],
+  "input_tags": {
+    "python_code": ["code_generation", "code_refinement", "syntax_check"],
+    "file_path": ["file_creation", "file_deletion", "file_append", "file_retrieval"],
+    "content_to_append": ["file_append"],
+    "file_content": ["file_append", "file_creation"],
+    "sub_goal": ["content_generation", "code_generation", "information_retrieval"],
+    "instruction": ["content_generation"],
+    "directory_path": ["file_list"],
+    "error": ["code_refinement"],
+    "input_data": ["information_retrieval"],
+    "main_goal": ["code_generation", "content_generation", "information_retrieval"],
+    "code": ["code_testing"],
+    "content_type": ["content_generation"]
+  },
+  "output_tags": {
+    "generated_code": ["code_generation"],
+    "file_content": ["file_retrieval"],
+    "refined_code": ["code_refinement"],
+    "test_results": ["code_testing"],
+    "syntax_check_result": ["syntax_check"],
+    "installation_result": ["pip_install"],
+    "operation_results": ["file_creation", "file_deletion", "file_append"],
+    "string": ["list_generation"],
+    "file_list": ["file_list"],
+    "generated_content": ["content_generation"],
+    "retrieved_information": ["information_retrieval"]
+  },
+  "attributes": {
+    "programming_language": ["code_generation", "code_refinement", "syntax_check"],
+    "LLM": ["code_generation", "content_generation", "information_retrieval", "list_generation", "code_refinement"]
+  }
+}

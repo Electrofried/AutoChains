@@ -1,0 +1,19 @@
+{
+    "name": "File List Task",
+    "requirement_tags": [
+        "directory_path"
+    ],
+    "output_tags": [
+        "file_list"
+    ],
+    "meta_tags": [
+        "file_manipulation",
+        "file_list"
+    ],
+    "input_tags": [
+        "directory_path"
+    ],
+    "imports": [
+        "os"
+    ]
+}

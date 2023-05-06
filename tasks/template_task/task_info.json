@@ -1,0 +1,22 @@
+{
+    "name": "Template Task",
+    "requirement_tags": [
+        "programming",
+        "information"
+    ],
+    "output": [
+        "python",
+        "code"
+    ],
+    "meta_tags": [
+        "python",
+        "content_generation"
+    ],
+    "input_tags": [
+        "input_data"
+    ],
+    "imports": [
+        "provider.generate_text",
+        "os"
+    ]
+}

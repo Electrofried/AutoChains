@@ -1,0 +1,19 @@
+{
+    "name": "File Deletion Task",
+    "requirement_tags": [
+        "file_path"
+    ],
+    "output_tags": [
+        "operation_results"
+    ],
+    "meta_tags": [
+        "file_manipulation",
+        "file_deletion"
+    ],
+    "input_tags": [
+        "file_path"
+    ],
+    "imports": [
+        "os"
+    ]
+}

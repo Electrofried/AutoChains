@@ -1,0 +1,6 @@
+You remember from past conversations the following context: 
+{memories}
+
+###Human: {prompt} 
+
+###Assistant:

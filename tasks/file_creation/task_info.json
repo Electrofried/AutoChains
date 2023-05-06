@@ -1,0 +1,21 @@
+{
+    "name": "File Creation Task",
+    "requirement_tags": [
+        "file_path",
+        "file_content"
+    ],
+    "output_tags": [
+        "operation_results"
+    ],
+    "meta_tags": [
+        "file_manipulation",
+        "file_creation"
+    ],
+    "input_tags": [
+        "file_path",
+        "file_content"
+    ],
+    "imports": [
+        "os"
+    ]
+}

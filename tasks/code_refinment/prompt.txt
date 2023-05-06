@@ -1,0 +1,7 @@
+###Human: Refine the following code snippet to improve it and achieve the main goal of '{main_goal}' and the sub-goal of '{sub_goal}'.
+{error_section}
+
+Code:
+{code}
+
+###Assistant:

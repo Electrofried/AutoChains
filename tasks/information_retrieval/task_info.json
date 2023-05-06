@@ -1,0 +1,26 @@
+{
+    "name": "Information Retrieval Task",
+    "requirement_tags": [
+        "main_goal",
+        "sub_goal"
+    ],
+    "optional_tags": [
+        "specific_info"
+    ],
+    "output_tags": [
+        "retrieved_information"
+    ],
+    "meta_tags": [
+        "information_retrieval",
+        "llm"
+    ],
+    "input_tags": [
+        "main_goal",
+        "sub_goal",
+        "specific_info"
+    ],
+    "imports": [
+        "provider.generate_text",
+        "os"
+    ]
+}

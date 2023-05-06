@@ -1,0 +1,146 @@
+Complete project summary:
+
+`memory_store.py`:
+
+1. `logger(message: str, level: int = 1) -> None`:
+   - Logs messages according to the specified log level.
+   - Input: message (str) and an optional log level (int, default is 1).
+   - Output: None (prints log messages to the console).
+
+2. `store_filtered_chunks(chroma_handler: ChromaDBHandler, prompt: str, result: str, name: str) -> None`:
+   - Stores the filtered chunks of the given prompt and result.
+   - Input: chroma_handler (ChromaDBHandler object), prompt (str), result (str), and name (str).
+   - Output: None (stores data in the ChromaDB collection).
+
+3. `store_chunk(chroma_handler: ChromaDBHandler, chunk: str, name: str, chunk_type: str, prompt_id: str) -> None`:
+   - Stores a single chunk of text data with the associated metadata.
+   - Input: chroma_handler (ChromaDBHandler object), chunk (str), name (str), chunk_type (str), and prompt_id (str).
+   - Output: None (stores data in the ChromaDB collection).
+
+`memory_retrieve.py`:
+
+1. `filter_memories_by_distance(retrieved_memories: dict, distance_value: float, higher_than: bool = True) -> List[str]`:
+   - Filters the retrieved memories based on their distance value.
+   - Input: retrieved_memories (dict), distance_value (float), and an optional higher_than flag (bool, default is True).
+   - Output: filtered_memories (list of strings).
+
+2. `get_filtered_memories(prompt: str, name: str, chunktype: str, distance_value: float = 0.1) -> List[str]`:
+   - Retrieves and filters memories based on the given prompt, name, chunk type, and an optional distance value.
+   - Input: prompt (str), name (str), chunktype (str), and an optional distance_value (float, default is 0.1).
+   - Output: filtered_memories (list of strings).
+
+`text_generator.py`:
+
+1. `get_config() -> dict`:
+   - Loads the configuration data from the `config.json` file.
+   - Input: None
+   - Output: A dictionary containing the configuration data.
+
+2. `run(prompt: str, **kwargs) -> str`:
+   - Sends a prompt to a remote large language model for processing and returns the generated result.
+   - Input: prompt (str) and optional keyword arguments (**kwargs) to override default parameters.
+   - Output: The generated text result (str).
+
+`config.json`:
+
+- Contains the HOST address and default parameters for the text generation API.
+
+Project Overview:
+
+The Autonomous Agent Creation System project aims to leverage a large language model (LLM) to develop a system
+ that allows users to create and configure a chain of tasks in order to achieve a specific goal. 
+ The system will utilize a modular task system, a graphical user interface (GUI), and a vector database memory storage
+  to enhance the performance and context of the LLM. This will enable the task agents to cooperate and optimize the outcome of the tasks effectively.
+
+Recommendations:
+
+1. Create a GUI for users to define tasks, inputs, and outputs easily and intuitively.
+2. Implement a system that can parse the user-defined goal and generate the required tasks automatically.
+3. Develop an algorithm to optimize the task chain, either by the user's intervention or automatically.
+4. Incorporate feedback loops to improve the system's overall performance and adaptability.
+5. Allow for seamless integration of external tools, libraries, or APIs as part of the task chain.
+6. Ensure data security and privacy by encrypting sensitive data and implementing access controls.
+7. Monitor and log system performance for debugging and maintenance purposes.
+
+Optimal Task List:
+
+1. Design the system architecture and outline its core components.
+2. Develop the modular task system, allowing for task definition, input, and output functions.
+3. Create the GUI for users to interact with the task system and configure task chains.
+4. Implement the LLM integration to automatically generate task chains based on user goals.
+5. Develop the memory storage functionality for providing task-based memory to task agents.
+6. Create algorithms for optimizing task chains and improving the LLM context.
+7. Implement a feedback loop mechanism for improving system performance and adaptability.
+8. Integrate external tools, libraries, or APIs as necessary.
+9. Ensure data security, privacy, and access controls.
+10. Monitor, log, and maintain system performance.
+
+Brief Project Description:
+
+The Autonomous Agent Creation System is a project that aims to create a user-friendly 
+interface for configuring task chains to achieve specific goals. It leverages a large language model to generate 
+tasks automatically, optimize task chains, and provide contextual information. The system utilizes a modular task system, 
+a graphical user interface, and a vector database memory storage to enhance the overall performance and adaptability of the LLM, 
+ensuring the efficient completion of tasks.
+
+
+Here's a high-level overview of the proposed system architecture:
+
+1. User Interface (UI): A graphical user interface (GUI) that allows users to define tasks, inputs, and outputs easily and intuitively. The UI should be user-friendly and provide clear instructions on how to create and configure task chains.
+
+2. Task System: The core of the project, responsible for handling tasks, inputs, and outputs. The task system should be modular and allow users to define custom tasks along with their required input and output functions. It should also enable users to create and manage task chains.
+
+3. LLM Integration: The system will integrate with a large language model to automatically generate task chains based on user goals. The LLM should be used to provide context and optimization for the task chains, ensuring that the generated results are relevant and accurate.
+
+4. Memory Storage: A vector database memory storage will provide task-based memory to task agents, allowing them to improve their context and enhance the LLM's performance. This component should be designed to handle the storage and retrieval of data efficiently and securely.
+
+5. Task Chain Optimization: An algorithm that optimizes task chains by reordering tasks, modifying task parameters, or suggesting alternative tasks to achieve the user's goal more efficiently.
+
+6. Feedback Loop: A mechanism that collects user feedback and system performance data to improve the system's adaptability and performance over time.
+
+7. External Integrations: The system should allow for seamless integration with external tools, libraries, or APIs to support additional functionality or enhance the capabilities of the task agents.
+
+8. Monitoring and Logging: The system should log and monitor its performance to facilitate debugging and maintenance.
+
+Here's a visual representation of the system architecture:
+
+```
++---------------------+
+| User Interface (UI) |
++---------------------+
+         |
+         v
++----------------+
+| Task System    |
++----------------+
+         |
+         v
++----------------+
+| LLM Integration|
++----------------+
+         |
+         v
++----------------+
+| Memory Storage |
++----------------+
+         |
+         v
++---------------------+
+| Task Chain Optimization |
++---------------------+
+         |
+         v
++-------------+
+| Feedback Loop |
++-------------+
+         |
+         v
++---------------------+
+| External Integrations |
++---------------------+
+         |
+         v
+--------+
+| Monitoring and Logging |
++----------------------+
+```
