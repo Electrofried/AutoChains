@@ -1,4 +1,4 @@
-Your combination of approaches seems well-thought-out and should help you achieve the desired task chain optimization while staying within the LLM's context window limit. Here's a breakdown of the proposed method and some recommendations:
+
 
 1. **Initial task generation**: Use the LLM to generate a sub-task list (with a set number of sub-tasks from the configuration) prioritized based on the user prompt.
 
