@@ -35,3 +35,13 @@ class TaskLoader:
             raise ValueError(f"Task '{task_name}' not found.")
         task = self.tasks[task_name]
         return task["module"].execute(**kwargs)
+    
+
+    def get_valid_tasks_by_input_types(self, input_types: list[str]):
+        valid_tasks = []
+        for task in self.tasks:
+            input_tags = set(task['input_tags'])
+            if input_tags.issubset(input_types):
+                valid_tasks.append(task)
+        return valid_tasks
+

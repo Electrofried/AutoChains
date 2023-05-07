@@ -1,0 +1,8 @@
+###Human:
+Objective: {goal}
+Valid next tasks: {valid_next_tasks}
+Chain so far: {chain_so_far}
+
+
+Choose a valid next task to continue the chain or "chain complete" if the current chain is sufficient to achieve the goal.
+###Assistant:

@@ -1,0 +1,19 @@
+{
+    "name": "Chain Create Task",
+    "requirement_tags": [],
+    "output_tags": [
+        "chosen_starting_task",
+        "string"
+    ],
+    "meta_tags": [
+        "chain_create",
+        "task_selection"
+    ],
+    "input_tags": [
+        "objective_list",
+        "valid_starting_tasks"
+    ],
+    "imports": [
+        "provider.generate_text"
+    ]
+}

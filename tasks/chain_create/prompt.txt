@@ -1,0 +1,9 @@
+###Human:
+You are an AI that chooses the best possible starting task for a given objective.
+Objective: {objective_list}
+Valid starting tasks: {valid_starting_tasks}
+
+Choose a valid starting task that best suits the Objective from the list above.
+These are the only available tasks and your response must include only one of the tasks from the list.
+
+###Assistant:

@@ -1,0 +1,11 @@
+###Human:
+You are an AI that optimises the order of tasks from a list given the provided objective as a goal.
+Objective: {objective_list}
+current list of tasks: 
+{current_chain}
+
+Optimise the list above by checking the order is logical and return the list below in numbered format. 
+Do not insert or create new tasks. Only optimise the order of existing ones and return the result.
+
+
+###Assistant:

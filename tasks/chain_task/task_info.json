@@ -1,0 +1,20 @@
+{
+    "name": "Chain Task",
+    "requirement_tags": [],
+    "output_tags": [
+        "chosen_next_task",
+        "string"
+    ],
+    "meta_tags": [
+        "chain_task",
+        "task_selection"
+    ],
+    "input_tags": [
+        "goal",
+        "valid_next_tasks",
+        "chain_so_far"
+    ],
+    "imports": [
+        "provider.generate_text"
+    ]
+}

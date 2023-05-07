@@ -1,0 +1,19 @@
+{
+    "name": "Chain Optimise Task",
+    "requirement_tags": [],
+    "output_tags": [
+        "optimized_chain",
+        "string"
+    ],
+    "meta_tags": [
+        "chain_optimise",
+        "task_optimisation"
+    ],
+    "input_tags": [
+        "objective_list",
+        "current_chain"
+    ],
+    "imports": [
+        "provider.generate_text"
+    ]
+}
