@@ -6,7 +6,7 @@ def execute(input_code: str):
     try:
         for dependency in dependencies:
             subprocess.check_call(["pip", "install", dependency])
-        return {'status': 'success', 'installation_result': 'Dependencies installed'}
+        return {'status': 'success'}
     except Exception as e:
         return {'status': 'error', 'message': str(e)}
 

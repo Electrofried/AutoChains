@@ -1,13 +1,14 @@
 {
     "friendly_name": "Code Testing",
     "task_name": "code_testing",
-    "inputs": ["python_code"],
-    "outputs": ["syntax_check_result"],
+    "inputs": ["input_code"],
+    "outputs": ["output_data", "status"],
     "input_descriptions": {
-      "python_code": "A string containing the Python code to be tested for syntax issues."
+      "input_code": "A string containing the Python code to be tested for syntax issues."
     },
     "output_descriptions": {
-      "syntax_check_result": "A string containing the result of the syntax check performed on the input Python code."
+      "output_data": "A string containing the result of the syntax check performed on the input Python code.",
+      "status" : "True or False depending on if code is generated properly."
     }
   }
   

@@ -1,15 +1,16 @@
 {
     "friendly_name": "Code Generation",
     "task_name": "code_generation",
-    "inputs": ["main_goal", "sub_goal", "specific_info"],
-    "outputs": ["generated_code"],
+    "inputs": ["input_data", "input_goal", "specific_info"],
+    "outputs": ["output_code", "status"],
     "input_descriptions": {
-      "main_goal": "A string representing the main goal of the code generation task.",
-      "sub_goal": "A string representing the sub-goal of the code generation task.",
+      "input_data": "A string representing the main goal of the chain.",
+      "input_goal": "A string representing the main goal of the code task.",
       "specific_info": "An optional string containing any specific information to consider during code generation."
     },
     "output_descriptions": {
-      "generated_code": "A string containing the generated code based on the input goals and specific information."
+      "output_code": "A string containing the generated code based on the input goals and specific information.",
+      "status" : "True or False depending on if code is generated properly."
     }
   }
   

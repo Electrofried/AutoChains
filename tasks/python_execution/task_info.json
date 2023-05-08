@@ -1,15 +1,14 @@
 {
     "friendly_name": "Python Execution",
     "task_name": "python_execution",
-    "inputs": ["file_path"],
-    "outputs": ["status", "execution_result", "message"],
+    "inputs": ["input_path"],
+    "outputs": ["status", "output_data"],
     "input_descriptions": {
-      "file_path": "A string representing the path of the Python file to be executed."
+      "input_path": "A string representing the path of the Python file to be executed."
     },
     "output_descriptions": {
       "status": "A string indicating the success ('success') or failure ('error') of the Python execution operation.",
-      "execution_result": "A string containing the output of the Python file execution.",
-      "message": "A string containing the error message in case of failure."
+      "output_data": "A string containing the output of the Python file execution or the error message in case of failure."
     }
   }
   

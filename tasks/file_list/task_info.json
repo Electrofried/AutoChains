@@ -1,14 +1,14 @@
 {
     "friendly_name": "File List",
     "task_name": "file_list",
-    "inputs": ["directory_path"],
-    "outputs": ["status", "file_list", "message"],
+    "inputs": ["input_directory"],
+    "outputs": ["status", "output_data", "message"],
     "input_descriptions": {
-      "directory_path": "A string representing the path of the directory to list the files from."
+      "input_directory": "A string representing the path of the directory to list the files from."
     },
     "output_descriptions": {
-      "status": "A string indicating the success ('success') or failure ('error') of the file listing operation.",
-      "file_list": "A list of file names in the specified directory.",
+      "status": "A string indicating the success ('success') or failure ('failure') of the file listing operation.",
+      "output_data": "A list of file names in the specified directory.",
       "message": "A string containing the error message in case of failure."
     }
   }

@@ -1,13 +1,13 @@
 {
     "friendly_name": "Chain Creation",
     "task_name": "chain_create",
-    "inputs": ["objective_list"],
-    "outputs": ["chosen_starting_task_name", "chain_so_far"],
+    "inputs": ["input_data"],
+    "outputs": ["starting_task_name", "chain_so_far"],
     "input_descriptions": {
-      "objective_list": "A string containing the list of objectives to be used in the chain creation process."
+      "input_data": "A string containing the list of objectives to be used in the chain creation process."
     },
     "output_descriptions": {
-      "chosen_starting_task_name": "The name of the chosen starting task for the chain.",
+      "starting_task_name": "The name of the chosen starting task for the chain.",
       "chain_so_far": "A list representing the chain of tasks created so far."
     }
   }

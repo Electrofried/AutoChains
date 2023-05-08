@@ -1,16 +1,16 @@
 {
     "friendly_name": "Information Retrieval",
     "task_name": "information_retrieval",
-    "inputs": ["main_goal", "sub_goal", "specific_info"],
-    "outputs": ["status", "retrieved_information"],
+    "inputs": ["input_goal", "input_sub_goal", "input_info"],
+    "outputs": ["status", "output_data"],
     "input_descriptions": {
-      "main_goal": "A string representing the main goal of the task.",
-      "sub_goal": "A string representing the sub-goal of the task.",
-      "specific_info": "An optional string containing specific information to be considered during information retrieval."
+      "input_goal": "A string representing the main goal of the task.",
+      "input_sub_goal": "A string representing the sub-goal of the task.",
+      "output_data": "An optional string containing specific information to be considered during information retrieval."
     },
     "output_descriptions": {
       "status": "A string indicating the success ('success') or failure ('error') of the information retrieval operation.",
-      "retrieved_information": "A string containing the retrieved information based on the given input."
+      "output_data": "A string containing the retrieved information based on the given input."
     }
   }
   

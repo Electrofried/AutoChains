@@ -1,11 +1,11 @@
 {
     "friendly_name": "Chain Optimization",
     "task_name": "chain_optimise",
-    "inputs": ["objective_list", "current_chain"],
+    "inputs": ["input_data", "chain_so_far"],
     "outputs": ["optimized_chain"],
     "input_descriptions": {
-      "objective_list": "A list containing the objectives to be considered during chain optimization.",
-      "current_chain": "A list representing the current chain of tasks."
+      "input_data": "A list containing the objectives to be considered during chain optimization.",
+      "chain_so_far": "A list representing the current chain of tasks."
     },
     "output_descriptions": {
       "optimized_chain": "A list representing the optimized chain of tasks."

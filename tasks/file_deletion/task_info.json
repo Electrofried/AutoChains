@@ -1,10 +1,10 @@
 {
     "friendly_name": "File Deletion",
     "task_name": "file_delete",
-    "inputs": ["file_path"],
+    "inputs": ["input_path"],
     "outputs": ["result"],
     "input_descriptions": {
-      "file_path": "A string representing the path of the file to be deleted."
+      "input_path": "A string representing the path of the file to be deleted."
     },
     "output_descriptions": {
       "result": "A string containing the result of the file deletion operation, indicating success or any encountered error."

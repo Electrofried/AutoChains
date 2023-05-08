@@ -1,16 +1,16 @@
 {
     "friendly_name": "Content Generation",
     "task_name": "content_generation",
-    "inputs": ["content_type", "main_goal", "sub_goal", "instruction"],
-    "outputs": ["generated_content"],
+    "inputs": ["input_type", "input_goal", "input_sub_goal", "input_instruction"],
+    "outputs": ["output_data"],
     "input_descriptions": {
-      "content_type": "A string representing the type of content to generate.",
-      "main_goal": "A string representing the main goal of the content generation task.",
-      "sub_goal": "A string representing the sub-goal of the content generation task.",
-      "instruction": "An optional string containing any specific instruction to follow during content generation."
+      "input_type": "A string representing the type of content to generate.",
+      "input_goal": "A string representing the main goal of the content generation task.",
+      "input_sub_goal": "A string representing the sub-goal of the content generation task.",
+      "input_instruction": "An optional string containing any specific instruction to follow during content generation."
     },
     "output_descriptions": {
-      "generated_content": "A string containing the generated content based on the input content type, goals, and instruction."
+      "output_data": "A string containing the generated content based on the input content type, goals, and instruction."
     }
   }
   

@@ -12,10 +12,13 @@ def execute(input_data: str, chain_so_far: list, input_limit: int = None) -> dic
     prompt = prompt.format(goal=input_data, valid_next_tasks=valid_next_tasks, chain_so_far=chain_so_far)
     chosen_next_task = generate_text(prompt)
     chosen_next_task_name = extract_task_name(chosen_next_task, valid_next_tasks)
+    chain_so_far.append(chosen_next_task_name)
 
     if input_limit and len(chain_so_far) >= input_limit:
-        chosen_next_task_name = 'chain complete'
+        chosen_next_task_name = 'chain_complete'
+        chain_so_far.append(chosen_next_task_name)
 
+    
     return {'chosen_next_task_name': chosen_next_task_name, 'chain_so_far': chain_so_far}
 
 def load_prompt_text(filename: str) -> str:

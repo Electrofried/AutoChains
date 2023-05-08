@@ -9,7 +9,8 @@ def execute(input_type: str, input_goal: str, input_sub_goal: str, input_instruc
     prompt = prompt_template.format(content_type=input_type, main_goal=input_goal, sub_goal=input_sub_goal, instruction_section=instruction_section)
 
     generated_content = generate_text(prompt)
-    return {'status': 'success', 'generated_content': generated_content}
+    
+    return {'output_data': generated_content}
 
 def load_prompt_text(filename: str) -> str:
     with open(filename, 'r') as file:

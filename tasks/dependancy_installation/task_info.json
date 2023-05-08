@@ -1,13 +1,14 @@
 {
     "friendly_name": "Dependency Installation",
     "task_name": "dependancy_installation",
-    "inputs": ["python_code"],
-    "outputs": ["installation_result"],
+    "inputs": ["input_code"],
+    "outputs": ["status", "message"],
     "input_descriptions": {
-      "python_code": "A string containing the Python code whose dependencies need to be installed."
+      "input_code": "A string containing the Python code whose dependencies need to be installed."
     },
     "output_descriptions": {
-      "installation_result": "A string containing the result of the dependency installation process."
+      "status": "A bool that is either true or false if tha operation succeded or failed.",
+      "message": "Optional message containing information reguarding any errors."
     }
   }
   

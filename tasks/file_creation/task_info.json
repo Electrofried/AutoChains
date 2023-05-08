@@ -1,11 +1,11 @@
 {
     "friendly_name": "File Creation",
     "task_name": "file_creation",
-    "inputs": ["file_path", "file_content"],
+    "inputs": ["input_path", "input_content"],
     "outputs": ["result"],
     "input_descriptions": {
-      "file_path": "A string representing the path of the file to be created.",
-      "file_content": "A string containing the content to be written to the new file."
+      "input_path": "A string representing the path of the file to be created.",
+      "input_content": "A string containing the content to be written to the new file."
     },
     "output_descriptions": {
       "result": "A string containing the result of the file creation operation, indicating success or any encountered error."

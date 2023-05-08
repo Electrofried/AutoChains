@@ -2,12 +2,12 @@
     "friendly_name": "File Retrieval",
     "task_name": "file_retrieval",
     "inputs": ["file_path"],
-    "outputs": ["result"],
+    "outputs": ["output_data"],
     "input_descriptions": {
       "file_path": "A string representing the path of the file to be retrieved."
     },
     "output_descriptions": {
-      "result": "A string containing the content of the retrieved file or an error message in case of failure."
+      "output_data": "A string containing the content of the retrieved file or an error message in case of failure."
     }
   }
   

@@ -1,11 +1,11 @@
 {
     "friendly_name": "Objective List",
     "task_name": "objective_list",
-    "inputs": ["input_data", "num_sub_tasks"],
+    "inputs": ["input_data", "input_num_tasks"],
     "outputs": ["sub_tasks"],
     "input_descriptions": {
       "input_data": "A dictionary containing the input data for the task, including the prompt.",
-      "num_sub_tasks": "An integer representing the number of sub-tasks to be generated."
+      "input_num_tasks": "An integer representing the number of sub-tasks to be generated."
     },
     "output_descriptions": {
       "sub_tasks": "A list of strings containing the generated sub-tasks."

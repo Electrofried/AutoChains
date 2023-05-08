@@ -9,7 +9,7 @@ def execute(input_goal: str, input_sub_goal: str, input_info: str = None):
     prompt = prompt_template.format(main_goal=input_goal, sub_goal=input_sub_goal, specific_info_section=specific_info_section)
 
     retrieved_information = generate_text(prompt)
-    return {'status': 'success', 'retrieved_information': retrieved_information}
+    return {'status': 'success', 'output_data': retrieved_information}
 
 
 def load_prompt_text(filename: str) -> str:

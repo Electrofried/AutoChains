@@ -16,7 +16,7 @@ def execute(input_data: str) -> dict:
 
     chain_so_far = [chosen_starting_task_name]
 
-    return {'chosen_starting_task_name': chosen_starting_task_name, 'chain_so_far': chain_so_far}
+    return {'starting_task_name': chosen_starting_task_name, 'chain_so_far': chain_so_far}
 
 def load_prompt_text(filename: str) -> str:
     with open(filename, 'r') as file:
