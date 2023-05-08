@@ -1,8 +1,10 @@
 import os
 
-def execute(file_path):
+def execute(input_path):
     try:
-        os.remove(file_path)
-        return f"File '{file_path}' has been deleted successfully."
+        os.remove(input_path)
+        message = f"File '{input_path}' has been deleted successfully."
+        return {'message': message}
     except Exception as e:
-        return f"Error deleting file '{file_path}': {e}"
+        message =  f"Error deleting file '{input_path}': {e}"
+        return {'message': message}

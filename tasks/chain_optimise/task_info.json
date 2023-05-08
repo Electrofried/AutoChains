@@ -1,19 +1,14 @@
 {
-    "name": "Chain Optimise Task",
-    "requirement_tags": [],
-    "output_tags": [
-        "optimized_chain",
-        "string"
-    ],
-    "meta_tags": [
-        "chain_optimise",
-        "task_optimisation"
-    ],
-    "input_tags": [
-        "objective_list",
-        "current_chain"
-    ],
-    "imports": [
-        "provider.generate_text"
-    ]
-}
+    "friendly_name": "Chain Optimization",
+    "task_name": "chain_optimise",
+    "inputs": ["objective_list", "current_chain"],
+    "outputs": ["optimized_chain"],
+    "input_descriptions": {
+      "objective_list": "A list containing the objectives to be considered during chain optimization.",
+      "current_chain": "A list representing the current chain of tasks."
+    },
+    "output_descriptions": {
+      "optimized_chain": "A list representing the optimized chain of tasks."
+    }
+  }
+  

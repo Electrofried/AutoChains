@@ -1,9 +1,11 @@
 import os
 
-def execute(file_path, file_content):
+def execute(input_path, input_content):
     try:
-        with open(file_path, 'w') as file:
-            file.write(file_content)
-        return f"File '{file_path}' has been created successfully."
+        with open(input_path, 'w') as file:
+            file.write(input_content)
+        message = f"File '{input_path}' has been created successfully."
+        return {'message': message}
     except Exception as e:
-        return f"Error creating file '{file_path}': {e}"
+        message = f"Error creating file '{input_path}': {e}"
+        return {'message': message}

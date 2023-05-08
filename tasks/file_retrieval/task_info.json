@@ -1,19 +1,13 @@
 {
-    "name": "File Retrieval Task",
-    "requirement_tags": [
-        "file_path"
-    ],
-    "output_tags": [
-        "file_content"
-    ],
-    "meta_tags": [
-        "file_manipulation",
-        "file_retrieval"
-    ],
-    "input_tags": [
-        "file_path"
-    ],
-    "imports": [
-        "os"
-    ]
-}
+    "friendly_name": "File Retrieval",
+    "task_name": "file_retrieval",
+    "inputs": ["file_path"],
+    "outputs": ["result"],
+    "input_descriptions": {
+      "file_path": "A string representing the path of the file to be retrieved."
+    },
+    "output_descriptions": {
+      "result": "A string containing the content of the retrieved file or an error message in case of failure."
+    }
+  }
+  

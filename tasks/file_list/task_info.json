@@ -1,19 +1,15 @@
 {
-    "name": "File List Task",
-    "requirement_tags": [
-        "directory_path"
-    ],
-    "output_tags": [
-        "file_list"
-    ],
-    "meta_tags": [
-        "file_manipulation",
-        "file_list"
-    ],
-    "input_tags": [
-        "directory_path"
-    ],
-    "imports": [
-        "os"
-    ]
-}
+    "friendly_name": "File List",
+    "task_name": "file_list",
+    "inputs": ["directory_path"],
+    "outputs": ["status", "file_list", "message"],
+    "input_descriptions": {
+      "directory_path": "A string representing the path of the directory to list the files from."
+    },
+    "output_descriptions": {
+      "status": "A string indicating the success ('success') or failure ('error') of the file listing operation.",
+      "file_list": "A list of file names in the specified directory.",
+      "message": "A string containing the error message in case of failure."
+    }
+  }
+  

@@ -4,17 +4,17 @@ import re
 
 
 
-def execute(objective_list: list, current_chain: list) -> list:
-    formatted_current_chain = "\n".join([f"{i + 1}. {task}" for i, task in enumerate(current_chain)])
+def execute(input_data: list, chain_so_far: list) -> dict:
+    formatted_current_chain = "\n".join([f"{i + 1}. {task}" for i, task in enumerate(chain_so_far)])
     prompt = load_prompt_text('tasks/chain_optimise/prompt.txt')
-    prompt = prompt.format(objective_list=objective_list, current_chain=formatted_current_chain)
+    prompt = prompt.format(objective_list=input_data, current_chain=formatted_current_chain)
 
     optimized_chain_text = generate_text(prompt)
 
     # Extract the tasks from the optimized chain text
-    optimized_chain = extract_tasks(optimized_chain_text, current_chain)
+    optimized_chain = extract_tasks(optimized_chain_text, chain_so_far)
 
-    return optimized_chain
+    return {'optimized_chain': optimized_chain}
 
 def extract_tasks(response: str, valid_tasks: list) -> list:
     tasks = []

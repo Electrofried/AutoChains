@@ -1,21 +1,14 @@
 {
-    "name": "File Creation Task",
-    "requirement_tags": [
-        "file_path",
-        "file_content"
-    ],
-    "output_tags": [
-        "operation_results"
-    ],
-    "meta_tags": [
-        "file_manipulation",
-        "file_creation"
-    ],
-    "input_tags": [
-        "file_path",
-        "file_content"
-    ],
-    "imports": [
-        "os"
-    ]
-}
+    "friendly_name": "File Creation",
+    "task_name": "file_creation",
+    "inputs": ["file_path", "file_content"],
+    "outputs": ["result"],
+    "input_descriptions": {
+      "file_path": "A string representing the path of the file to be created.",
+      "file_content": "A string containing the content to be written to the new file."
+    },
+    "output_descriptions": {
+      "result": "A string containing the result of the file creation operation, indicating success or any encountered error."
+    }
+  }
+  

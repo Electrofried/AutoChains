@@ -1,8 +1,8 @@
 import subprocess
 import re
 
-def execute(python_code: str):
-    dependencies = extract_dependencies(python_code)
+def execute(input_code: str):
+    dependencies = extract_dependencies(input_code)
     try:
         for dependency in dependencies:
             subprocess.check_call(["pip", "install", dependency])

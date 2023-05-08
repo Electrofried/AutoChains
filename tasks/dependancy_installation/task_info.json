@@ -1,20 +1,13 @@
 {
-    "name": "Dependency Installation Task",
-    "requirement_tags": [
-        "python_code"
-    ],
-    "output_tags": [
-        "installation_result"
-    ],
-    "meta_tags": [
-        "dependency_management",
-        "pip_install"
-    ],
-    "input_tags": [
-        "python_code"
-    ],
-    "imports": [
-        "subprocess",
-        "re"
-    ]
-}
+    "friendly_name": "Dependency Installation",
+    "task_name": "dependancy_installation",
+    "inputs": ["python_code"],
+    "outputs": ["installation_result"],
+    "input_descriptions": {
+      "python_code": "A string containing the Python code whose dependencies need to be installed."
+    },
+    "output_descriptions": {
+      "installation_result": "A string containing the result of the dependency installation process."
+    }
+  }
+  

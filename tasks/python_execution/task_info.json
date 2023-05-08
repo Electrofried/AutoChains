@@ -1,19 +1,15 @@
 {
-    "name": "Code Testing Task",
-    "requirement_tags": [
-        "generated_code"
-    ],
-    "output_tags": [
-        "test_results"
-    ],
-    "meta_tags": [
-        "code_testing",
-        "programming"
-    ],
-    "input_tags": [
-        "file_path"
-    ],
-    "imports": [
-        "subprocess"
-    ]
-}
+    "friendly_name": "Python Execution",
+    "task_name": "python_execution",
+    "inputs": ["file_path"],
+    "outputs": ["status", "execution_result", "message"],
+    "input_descriptions": {
+      "file_path": "A string representing the path of the Python file to be executed."
+    },
+    "output_descriptions": {
+      "status": "A string indicating the success ('success') or failure ('error') of the Python execution operation.",
+      "execution_result": "A string containing the output of the Python file execution.",
+      "message": "A string containing the error message in case of failure."
+    }
+  }
+  

@@ -1,5 +1,7 @@
-###Human: Refine the following code snippet to improve it and achieve the main goal of '{main_goal}' and the sub-goal of '{sub_goal}'.
-{error_section}
+###Human: 
+You are a code refinment AI created as part of a project to achive: '{main_goal}'
+Refine the following code to improve it and achieve '{sub_goal}'.
+{input_error}
 
 Code:
 {code}

@@ -1,20 +1,16 @@
 {
-    "name": "Chain Task",
-    "requirement_tags": [],
-    "output_tags": [
-        "chosen_next_task",
-        "string"
-    ],
-    "meta_tags": [
-        "chain_task",
-        "task_selection"
-    ],
-    "input_tags": [
-        "goal",
-        "valid_next_tasks",
-        "chain_so_far"
-    ],
-    "imports": [
-        "provider.generate_text"
-    ]
-}
+    "friendly_name": "Chain Task",
+    "task_name": "chain_task",
+    "inputs": ["goal", "chain_so_far", "hard_limit"],
+    "outputs": ["chosen_next_task_name", "chain_so_far"],
+    "input_descriptions": {
+      "goal": "A string representing the goal of the chain.",
+      "chain_so_far": "A list representing the chain of tasks created so far.",
+      "hard_limit": "An optional integer representing the maximum length of the chain."
+    },
+    "output_descriptions": {
+      "chosen_next_task_name": "The name of the chosen next task for the chain.",
+      "chain_so_far": "A list representing the chain of tasks created so far."
+    }
+  }
+  

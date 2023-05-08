@@ -1,21 +1,14 @@
 {
-    "name": "File Append Task",
-    "requirement_tags": [
-        "file_path",
-        "content_to_append"
-    ],
-    "output_tags": [
-        "operation_results"
-    ],
-    "meta_tags": [
-        "file_manipulation",
-        "file_append"
-    ],
-    "input_tags": [
-        "file_path",
-        "content_to_append"
-    ],
-    "imports": [
-        "os"
-    ]
-}
+    "friendly_name": "File Append",
+    "task_name": "file_append",
+    "inputs": ["file_path", "content_to_append"],
+    "outputs": ["result"],
+    "input_descriptions": {
+      "file_path": "A string representing the path of the file to which content should be appended.",
+      "content_to_append": "A string containing the content to be appended to the file."
+    },
+    "output_descriptions": {
+      "result": "A string containing the result of the file append operation, indicating success or any encountered error."
+    }
+  }
+  

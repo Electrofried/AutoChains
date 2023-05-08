@@ -1,17 +1,17 @@
 import os
 from provider import generate_text
 
-def execute(input_data, num_sub_tasks):
+def execute(input_data, input_num_tasks):
     with open(os.path.join(os.path.dirname(__file__), "prompt.txt"), "r") as f:
         prompt_template = f.read()
     
     prompt = input_data["prompt"]
-    prompt_txt = prompt_template.format(objective=prompt, num_sub_tasks=num_sub_tasks)
+    prompt_txt = prompt_template.format(objective=prompt, num_sub_tasks=input_num_tasks)
     
     generated_text = generate_text(prompt_txt)
-    sub_tasks = parse_sub_tasks(generated_text, num_sub_tasks)
+    sub_tasks = parse_sub_tasks(generated_text, input_num_tasks)
     
-    return sub_tasks
+    return {'sub_tasks': sub_tasks}
 
 
 def parse_sub_tasks(generated_text, num_sub_tasks):

@@ -3,6 +3,6 @@
 You are an AI created to assist with {main_goal},
 Generate {content_type} content that achieves the goal of '{sub_goal}'.
 
-{instruction_section}
+{input_instruction}
 
 ###Assistant:

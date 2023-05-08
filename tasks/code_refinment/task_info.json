@@ -1,27 +1,16 @@
 {
-    "name": "Code Refinement Task",
-    "requirement_tags": [
-        "code",
-        "main_goal",
-        "sub_goal"
-    ],
-    "optional_tags": [
-        "error"
-    ],
-    "output_tags": [
-        "refined_code"
-    ],
-    "meta_tags": [
-        "code_refinement",
-        "LLM"
-    ],
-    "input_tags": [
-        "code",
-        "main_goal",
-        "sub_goal",
-        "error"
-    ],
-    "imports": [
-        "provider.generate_text"
-    ]
-}
+    "friendly_name": "Code Refinement",
+    "task_name": "code_refinement",
+    "inputs": ["code", "main_goal", "sub_goal", "error"],
+    "outputs": ["refined_code"],
+    "input_descriptions": {
+      "code": "A string containing the initial code to be refined.",
+      "main_goal": "A string representing the main goal of the code refinement task.",
+      "sub_goal": "A string representing the sub-goal of the code refinement task.",
+      "error": "An optional string containing an error message to consider during code refinement."
+    },
+    "output_descriptions": {
+      "refined_code": "A string containing the refined code based on the input goals, error, and initial code."
+    }
+  }
+  

@@ -1,19 +1,13 @@
 {
-    "name": "Code Testing Task",
-    "requirement_tags": [
-        "python_code"
-    ],
-    "output_tags": [
-        "syntax_check_result"
-    ],
-    "meta_tags": [
-        "code_testing",
-        "syntax_check"
-    ],
-    "input_tags": [
-        "python_code"
-    ],
-    "imports": [
-        "pylint.lint"
-    ]
-}
+    "friendly_name": "Code Testing",
+    "task_name": "code_testing",
+    "inputs": ["python_code"],
+    "outputs": ["syntax_check_result"],
+    "input_descriptions": {
+      "python_code": "A string containing the Python code to be tested for syntax issues."
+    },
+    "output_descriptions": {
+      "syntax_check_result": "A string containing the result of the syntax check performed on the input Python code."
+    }
+  }
+  

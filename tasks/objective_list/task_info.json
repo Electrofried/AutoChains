@@ -1,23 +1,14 @@
 {
-    "name": "Objective List Task",
-    "requirement_tags": [
-        "objective",
-        "user_prompt"
-    ],
-    "output tags": [
-        "objective",
-        "list"
-    ],
-    "meta_tags": [
-        "list_generation",
-        "objective"
-    ],
-    "input_tags": [
-        "input_data",
-        "num_sub_tasks"
-    ],
-    "imports": [
-        "provider.generate_text",
-        "os"
-    ]
-}
+    "friendly_name": "Objective List",
+    "task_name": "objective_list",
+    "inputs": ["input_data", "num_sub_tasks"],
+    "outputs": ["sub_tasks"],
+    "input_descriptions": {
+      "input_data": "A dictionary containing the input data for the task, including the prompt.",
+      "num_sub_tasks": "An integer representing the number of sub-tasks to be generated."
+    },
+    "output_descriptions": {
+      "sub_tasks": "A list of strings containing the generated sub-tasks."
+    }
+  }
+  

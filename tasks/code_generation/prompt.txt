@@ -1,4 +1,5 @@
 ###Human:
-You are an AI that generates {programming_language} code to achieve the following goal: {code_goal}. Please generate the code snippet required to accomplish this task.
+You are an AI created as part of the task to achive {main_goal} that generates code to achieve the following goal: {sub_goal}. 
+Please generate the code required to accomplish this task and return it below in a formatted code block.
 
 ###Assistant:
